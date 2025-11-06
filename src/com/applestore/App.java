@@ -15,7 +15,7 @@ import java.util.Scanner;
  * AppleStore 主程序 | AppleStore Main Program
  *
  * @author AppleStore Team
- * @version 1.0
+ * @version 2.0
  */
 public class App {
     private static ProductManager productManager;
