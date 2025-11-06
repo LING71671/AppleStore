@@ -3,20 +3,20 @@ package com.applestore.model;
 import java.io.Serializable;
 
 /**
- * 产品抽象基类
- * 定义所有苹果产品的通用属性
+ * 产品抽象基类 | Abstract Product Base Class
+ * 定义所有苹果产品的通用属性 | Defines common attributes for all Apple products
  */
 public abstract class Product implements Serializable {
     private static final long serialVersionUID = 1L;
-    
+
     private String id;
     private String name;
     private String model;
     private double price;
-    private int stock; // 库存数量
+    private int stock; // 库存数量 | Stock quantity
     private String color;
-    private int storage; // 存储容量（GB）
-    
+    private int storage; // 存储容量（GB） | Storage capacity (GB)
+
     public Product(String name, String model, double price, int stock, String color, int storage) {
         this.id = generateId();
         this.name = name;
@@ -26,88 +26,88 @@ public abstract class Product implements Serializable {
         this.color = color;
         this.storage = storage;
     }
-    
+
     /**
-     * 生成唯一ID
+     * 生成唯一ID | Generate unique ID
      */
     private String generateId() {
         return System.currentTimeMillis() + "-" + (int)(Math.random() * 1000);
     }
-    
+
     // Getters and Setters
     public String getId() {
         return id;
     }
-    
+
     public void setId(String id) {
         this.id = id;
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
-    
+
     public String getModel() {
         return model;
     }
-    
+
     public void setModel(String model) {
         this.model = model;
     }
-    
+
     public double getPrice() {
         return price;
     }
-    
+
     public void setPrice(double price) {
         if (price < 0) {
-            throw new IllegalArgumentException("价格不能为负数");
+            throw new IllegalArgumentException("价格不能为负数 | Price cannot be negative");
         }
         this.price = price;
     }
-    
+
     public int getStock() {
         return stock;
     }
-    
+
     public void setStock(int stock) {
         if (stock < 0) {
-            throw new IllegalArgumentException("库存不能为负数");
+            throw new IllegalArgumentException("库存不能为负数 | Stock cannot be negative");
         }
         this.stock = stock;
     }
-    
+
     public String getColor() {
         return color;
     }
-    
+
     public void setColor(String color) {
         this.color = color;
     }
-    
+
     public int getStorage() {
         return storage;
     }
-    
+
     public void setStorage(int storage) {
         this.storage = storage;
     }
-    
+
     /**
-     * 获取产品详细信息
+     * 获取产品详细信息 | Get product details
      */
     public abstract String getDetails();
-    
+
     @Override
     public String toString() {
-        return String.format("%s - %s | 颜色: %s | 存储: %dGB | 价格: ¥%.2f | 库存: %d",
-                name, model, color, storage, price, stock);
+        return String.format("%s - %s | 颜色: %s | 存储: %dGB | 价格: ¥%.2f | 库存: %d | Color: %s | Storage: %dGB | Price: ¥%.2f | Stock: %d",
+                name, model, color, storage, price, stock, color, storage, price, stock);
     }
-    
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -115,10 +115,9 @@ public abstract class Product implements Serializable {
         Product product = (Product) obj;
         return id.equals(product.id);
     }
-    
+
     @Override
     public int hashCode() {
         return id.hashCode();
     }
 }
-
