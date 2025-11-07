@@ -104,8 +104,8 @@ public class ColorPrinter {
         println("\n", RESET);
         printLine(50);
         printRainbow("     ╔════════════════════════╗");
-        printRainbow("     ║   🍎 Welcome to        ║");
-        printRainbow("     ║   AppleStore  🍎       ║");
+        printRainbow("     ║       Welcome to       ║");
+        printRainbow("     ║       AppleStore       ║");
         printRainbow("     ╚════════════════════════╝");
         printLine(50);
         println("", RESET);
