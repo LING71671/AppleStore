@@ -10,6 +10,7 @@ import com.applestore.util.FileManager;
 
 import java.util.List;
 import java.util.Scanner;
+//Some of the English translations provided in the notes were generated with the assistance of translation tools.
 
 /**
  * AppleStore 主程序 | AppleStore Main Program
@@ -23,7 +24,9 @@ public class App {
     private static ConsoleUI consoleUI;
     private static Menu menu;
     private static Scanner scanner;
-
+    /**
+     * 主程序入口 | Main program entry point
+     */
     public static void main(String[] args) {
         // 初始化组件 | Initialize components
         initializeComponents();

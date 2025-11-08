@@ -5,6 +5,7 @@ import com.applestore.util.ColorPrinter;
 
 import java.util.*;
 import java.util.stream.Collectors;
+//We search and know that CRUD is crucial for constant manage.
 
 /**
  * 产品管理器 | Product Manager
