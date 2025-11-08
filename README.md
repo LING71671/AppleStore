@@ -4,3 +4,5 @@ A app to manage Apple's product
 
 2.1: Fixed the bug where the display interface borders were not aligned.
 
+2.2: Fixed the issue of product IDs displaying the same on the console.
+
