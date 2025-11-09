@@ -41,7 +41,7 @@ public class Menu {
      * 获取用户选择 | Get user choice
      */
     public int getUserChoice() {
-        ColorPrinter.print("请输入选项 (0-9): | Please enter option (0-9): ", ColorPrinter.BOLD_YELLOW);
+        ColorPrinter.print("请输入屏幕上的选项| Please enter the option on the screen : ", ColorPrinter.BOLD_YELLOW);
         try {
             return Integer.parseInt(scanner.nextLine().trim());
         } catch (NumberFormatException e) {

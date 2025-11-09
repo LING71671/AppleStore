@@ -94,7 +94,7 @@ public class ColorPrinter {
 
         int len = title.length() + 6;
         println("╔" + "═".repeat(len) + "╗", color);
-        println("║   " + title + "   ║", color);
+        println("║  " + title + " ║", color);           //We are thinking about how to align perfectly...
         println("╚" + "═".repeat(len) + "╝", color);
     }
 
@@ -144,7 +144,7 @@ public class ColorPrinter {
      * 打印表格分隔线 | Print table separator
      */
     public static void printTableSeparator() {
-        println("┌────────────────────────────────────────────────────────────────────────┐", CYAN);
+        println("┌──────────────────────────────────────────────────────────────────────────────────────┐", CYAN);
     }
 
     /**
@@ -153,9 +153,9 @@ public class ColorPrinter {
     public static void printTableHeader() {
         printTableSeparator();
         println("│" + BOLD_CYAN + String.format("%-10s", "ID") + RESET +
-               "│" + BOLD_CYAN + String.format("%-25s", "产品信息") + RESET +
+               "│" + BOLD_CYAN + String.format("%-48s", "产品信息") + RESET +
                "│" + BOLD_CYAN + String.format("%-10s", "价格") + RESET +
-               "│" + BOLD_CYAN + String.format("%-8s", "库存") + RESET + "│", WHITE);
+               "│" + BOLD_CYAN + String.format("%-6s", "库存") + RESET + "    │", WHITE);
         printTableSeparator();
     }
 
@@ -163,6 +163,6 @@ public class ColorPrinter {
      * 打印表格底部 | Print table bottom
      */
     public static void printTableBottom() {
-        println("└────────────────────────────────────────────────────────────────────────┘\n", CYAN);
+        println("└──────────────────────────────────────────────────────────────────────────────────────┘\n", CYAN);
     }
 }

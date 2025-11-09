@@ -35,9 +35,9 @@ public class ConsoleUI {
         ColorPrinter.printTableHeader();
 
         for (Product product : products) {
-            String row = String.format("│%-10s│%-25s│¥%-8.2f│  %-6d│",
+            String row = String.format(("│%-10s│%-50s│%-13s│%-10s│" ),
                     truncate(product.getId(), 10),
-                    truncate(product.getName() + " " + product.getModel(), 25),
+                    truncate(product.getName() + " " + product.getModel(), 50),
                     product.getPrice(),
                     product.getStock());
             ColorPrinter.println(row, ColorPrinter.WHITE);
@@ -104,7 +104,7 @@ public class ConsoleUI {
         ColorPrinter.printTableHeader();
 
         for (Product product : products) {
-            String row = String.format("│%-10s│%-25s│¥%-8.2f│  %-6d│",
+            String row = String.format("│%-10s│%-50s│%-13s│%-10s│",
                     truncate(product.getId(), 10),
                     truncate(product.getName() + " " + product.getModel(), 25),
                     product.getPrice(),
@@ -250,5 +250,10 @@ public class ConsoleUI {
             return str;
         }
         return str.substring(0, maxLength - 3) + "...";
+        //We enlarge the maximum length to ensure there is enough space to ensure the completly display of the string
     }
 }
+
+
+
+

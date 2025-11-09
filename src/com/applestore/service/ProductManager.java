@@ -5,7 +5,7 @@ import com.applestore.util.ColorPrinter;
 
 import java.util.*;
 import java.util.stream.Collectors;
-//We search and know that CRUD is crucial for constant manage.
+//We search and know that CRUD is crucial for constant manage...
 
 /**
  * 产品管理器 | Product Manager
@@ -32,6 +32,8 @@ public class ProductManager {
             ColorPrinter.printWarning("产品ID已存在: " + product.getId() + " | Product ID already exists: " + product.getId());
             return false;
         }
+                 // After vision2.2,the use of UUID made it easier to generate unique ID
+                // so maybe this part is unnecessary?
 
         products.add(product);
         ColorPrinter.printSuccess("产品添加成功: " + product.getName() + " - " + product.getModel() + " | Product added successfully: " + product.getName() + " - " + product.getModel());
@@ -132,6 +134,9 @@ public class ProductManager {
                 .filter(p -> p.getModel().toLowerCase().contains(lowerKeyword))
                 .collect(Collectors.toList());
     }
+
+    //Maybe the upper part is unnecessary.
+    //We can use the search method to replace the searchByName and searchByModel methods.
 
     /**
      * 搜索产品（综合搜索，包括名称、型号、颜色） | Search products (comprehensive search including name, model, color)

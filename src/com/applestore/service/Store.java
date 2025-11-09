@@ -75,7 +75,7 @@ public class Store {
      * 获取产品统计信息 | Get product statistics
      */
     public void printStatistics() {
-        ColorPrinter.printTitleBox("商店统计信息 | Store Statistics");
+        ColorPrinter.printTitleBox("商店统计信息| Store Statistics");
 
         ColorPrinter.printInfo("产品总数: " + productManager.getProductCount() + " | Total Products: " + productManager.getProductCount());
         ColorPrinter.printInfo("总库存: " + productManager.getTotalStock() + " | Total Stock: " + productManager.getTotalStock());

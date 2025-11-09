@@ -2,7 +2,7 @@ package com.applestore.model;
 
 import java.io.Serializable;
 import java.util.UUID;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.ThreadLocalRandom; // used in old vision
 
 /**
  * 产品抽象基类 | Abstract Product Base Class
