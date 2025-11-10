@@ -177,14 +177,4 @@ public class FileManager {
         }
     }
 
-    /**
-     * 清空数据文件 | Clear data file
-     */
-    public static void clearDataFile() {
-        File file = new File(PRODUCTS_FILE);
-        if (file.exists()) {
-            file.delete();
-            ColorPrinter.printInfo("数据文件已清空 | Data file cleared");
-        }
-    }
 }

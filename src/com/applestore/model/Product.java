@@ -36,8 +36,7 @@ public abstract class Product implements Serializable {
 
         return UUID.randomUUID().toString().substring(0, 8);
     }
-    //This is the third time I tried to fix the bug that all the products have the same id.(At least it's output like this)
-    //Oh!I forget to delete the previous ID.
+
 
 
     // Getters and Setters

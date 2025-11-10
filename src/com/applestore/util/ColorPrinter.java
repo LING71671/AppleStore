@@ -9,7 +9,6 @@ import java.util.Random;
 public class ColorPrinter {
     // ANSI颜色代码 | ANSI color codes
     public static final String RESET = "\033[0m";
-    public static final String BLACK = "\033[0;30m";       //A few moments later, we found the background color is black...
     public static final String RED = "\033[0;31m";
     public static final String GREEN = "\033[0;32m";
     public static final String YELLOW = "\033[0;33m";
@@ -18,22 +17,9 @@ public class ColorPrinter {
     public static final String CYAN = "\033[0;36m";
     public static final String WHITE = "\033[0;37m";
 
-    // 加粗颜色 | Bold colors
-    public static final String BOLD_RED = "\033[1;31m";
     public static final String BOLD_GREEN = "\033[1;32m";
     public static final String BOLD_YELLOW = "\033[1;33m";
-    public static final String BOLD_BLUE = "\033[1;34m";
-    public static final String BOLD_MAGENTA = "\033[1;35m";
     public static final String BOLD_CYAN = "\033[1;36m";
-
-    // 背景色 | Background colors
-    // P.S. I'm not sure that the background color will be use or not...
-    public static final String BG_RED = "\033[41m";
-    public static final String BG_GREEN = "\033[42m";
-    public static final String BG_YELLOW = "\033[43m";
-    public static final String BG_BLUE = "\033[44m";
-    public static final String BG_MAGENTA = "\033[45m";
-    public static final String BG_CYAN = "\033[46m";
 
     /**
      * 打印单个彩色文本 | Print single colored text

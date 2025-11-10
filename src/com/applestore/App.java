@@ -44,7 +44,7 @@ public class App {
             FileManager.saveProducts(productManager); // 自动保存 | Auto save
         }
 
-        // 运行主循环 | Run main loop
+        // 运行主循环 | Run the main loop
         runMainLoop();
 
         // 退出前保存数据 | Save data before exit
@@ -80,7 +80,7 @@ public class App {
     }
 
     /**
-     * 运行主循环 | Run main loop
+     * 运行主循环 | Run the main loop
      */
     private static void runMainLoop() {
         while (true) {

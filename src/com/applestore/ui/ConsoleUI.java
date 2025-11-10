@@ -250,7 +250,7 @@ public class ConsoleUI {
             return str;
         }
         return str.substring(0, maxLength - 3) + "...";
-        //We enlarge the maximum length to ensure there is enough space to ensure the completly display of the string
+        //We enlarge the maximum length to ensure there is enough space to ensure the completely display of the string
     }
 }
 
