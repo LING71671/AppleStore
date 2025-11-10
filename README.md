@@ -23,3 +23,7 @@ Fixed the issue of product IDs displaying the same on the console.
 2.4
 
 Delete some abstract, funny,dangerous, useless methods...
+
+2.41
+
+Fixed some known problems.
