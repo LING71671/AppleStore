@@ -1,6 +1,5 @@
 package com.applestore.ui;
 
-import com.applestore.model.*;
 import com.applestore.service.ProductManager;
 import com.applestore.util.ColorPrinter;
 

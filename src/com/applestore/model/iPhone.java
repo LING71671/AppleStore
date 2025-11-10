@@ -17,16 +17,8 @@ public class iPhone extends Product {
         return screenSize;
     }
 
-    public void setScreenSize(String screenSize) {
-        this.screenSize = screenSize;
-    }
-
     public String getCamera() {
         return camera;
-    }
-
-    public void setCamera(String camera) {
-        this.camera = camera;
     }
 
     @Override

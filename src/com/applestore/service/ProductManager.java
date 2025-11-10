@@ -107,36 +107,8 @@ public class ProductManager {
         return true;
     }
 
-    /**
-     * 根据名称搜索产品 | Search products by name
-     */
-    public List<Product> searchByName(String keyword) {
-        if (keyword == null || keyword.trim().isEmpty()) {
-            return getAllProducts();
-        }
 
-        String lowerKeyword = keyword.toLowerCase();
-        return products.stream()
-                .filter(p -> p.getName().toLowerCase().contains(lowerKeyword))
-                .collect(Collectors.toList());
-    }
-
-    /**
-     * 根据型号搜索产品 | Search products by model
-     */
-    public List<Product> searchByModel(String keyword) {
-        if (keyword == null || keyword.trim().isEmpty()) {
-            return getAllProducts();
-        }
-
-        String lowerKeyword = keyword.toLowerCase();
-        return products.stream()
-                .filter(p -> p.getModel().toLowerCase().contains(lowerKeyword))
-                .collect(Collectors.toList());
-    }
-
-    //Maybe the upper part is unnecessary.
-    //We can use the search method to replace the searchByName and searchByModel methods.
+    //We use the search method to replace the searchByName and searchByModel methods.
 
     /**
      * 搜索产品（综合搜索，包括名称、型号、颜色） | Search products (comprehensive search including name, model, color)
@@ -228,14 +200,6 @@ public class ProductManager {
         List<Product> sorted = new ArrayList<>(products);
         sorted.sort(Comparator.comparing(Product::getName));
         return sorted;
-    }
-
-    /**
-     * 清空所有产品 | Clear all products
-     */
-    public void clearAll() {
-        products.clear();
-        ColorPrinter.printWarning("所有产品已清空 | All products cleared");
     }
 
     /**

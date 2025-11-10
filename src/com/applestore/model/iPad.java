@@ -17,16 +17,8 @@ public class iPad extends Product {
         return screenSize;
     }
 
-    public void setScreenSize(String screenSize) {
-        this.screenSize = screenSize;
-    }
-
     public boolean isCellular() {
         return cellular;
-    }
-
-    public void setCellular(boolean cellular) {
-        this.cellular = cellular;
     }
 
     @Override

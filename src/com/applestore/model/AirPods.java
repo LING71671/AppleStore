@@ -18,16 +18,8 @@ public class AirPods extends Product {
         return noiseCancellation;
     }
 
-    public void setNoiseCancellation(String noiseCancellation) {
-        this.noiseCancellation = noiseCancellation;
-    }
-
     public int getBatteryLife() {
         return batteryLife;
-    }
-
-    public void setBatteryLife(int batteryLife) {
-        this.batteryLife = batteryLife;
     }
 
     @Override

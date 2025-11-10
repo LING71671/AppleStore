@@ -20,24 +20,12 @@ public class AppleWatch extends Product {
         return caseSize;
     }
 
-    public void setCaseSize(String caseSize) {
-        this.caseSize = caseSize;
-    }
-
     public String getCaseMaterial() {
         return caseMaterial;
     }
 
-    public void setCaseMaterial(String caseMaterial) {
-        this.caseMaterial = caseMaterial;
-    }
-
     public boolean isCellular() {
         return cellular;
-    }
-
-    public void setCellular(boolean cellular) {
-        this.cellular = cellular;
     }
 
     @Override

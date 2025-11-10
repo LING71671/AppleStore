@@ -17,16 +17,8 @@ public class MacBook extends Product {
         return screenSize;
     }
 
-    public void setScreenSize(String screenSize) {
-        this.screenSize = screenSize;
-    }
-
     public String getChip() {
         return chip;
-    }
-
-    public void setChip(String chip) {
-        this.chip = chip;
     }
 
     @Override
