@@ -22,4 +22,4 @@ Fixed the issue of product IDs displaying the same on the console.
 
 2.4
 
-Delete some abstract, funny,dangerous, useless methods
+Delete some abstract, funny,dangerous, useless methods...
