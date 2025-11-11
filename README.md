@@ -27,3 +27,9 @@ Delete some abstract, funny,dangerous, useless methods...
 2.41
 
 Fixed some known problems.
+
+2.42
+
+Delete some useless method again.
+
+
