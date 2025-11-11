@@ -65,7 +65,7 @@ public class ConsoleUI {
         ColorPrinter.println("  价格: ¥" + String.format("%.2f", product.getPrice()) + " | Price: ¥" + String.format("%.2f", product.getPrice()), ColorPrinter.GREEN);
         ColorPrinter.println("  库存: " + product.getStock() + " | Stock: " + product.getStock(), ColorPrinter.YELLOW);
 
-        // 根据产品类型显示额外信息 | Display additional information based on product type
+        // 根据产品类型显示额外信息 | Display additional information based on product types
         if (product instanceof MacBook) {
             MacBook mb = (MacBook) product;
             ColorPrinter.println("  屏幕: " + mb.getScreenSize() + " | Screen: " + mb.getScreenSize(), ColorPrinter.WHITE);
@@ -114,13 +114,6 @@ public class ConsoleUI {
 
         ColorPrinter.printTableBottom();
         ColorPrinter.printInfo("找到 " + products.size() + " 个产品 | Found " + products.size() + " products");
-    }
-
-    /**
-     * 显示筛选结果 | Display filter results
-     */
-    public void displayFilterResults(List<Product> products) {
-        displayAllProducts(); // 复用显示方法 | Reuse display method
     }
 
     /**
@@ -250,7 +243,7 @@ public class ConsoleUI {
             return str;
         }
         return str.substring(0, maxLength - 3) + "...";
-        //We enlarge the maximum length to ensure there is enough space to ensure the completely display of the string
+        //We enlarge the maximum length to ensure there is enough space to ensure the complete display of the string
     }
 }
 

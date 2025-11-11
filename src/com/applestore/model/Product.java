@@ -52,10 +52,6 @@ public abstract class Product implements Serializable {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }//Maybe at most time we don't need to change the name.
-
     public String getModel() {
         return model;
     }
@@ -118,15 +114,12 @@ public abstract class Product implements Serializable {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         Product product = (Product) obj;//类型声明 变量名 = 强制类型转换 转换Object类型的obj对象
-                                       //Maybe change the second "product" into "otherProduct" is better?
+
         return id.equals(product.id);
     }
 
     @Override
     public int hashCode() {
         return id.hashCode();
-    }//I have searched that the hashCode() method is used to calculate the hash value of an object.
-    // It is used to improve the performance of hash-based data structures such as HashMap and HashSet.
-   // And form my point of view, hashcode is an identifier used for quick lookups.
-
+    }
 }

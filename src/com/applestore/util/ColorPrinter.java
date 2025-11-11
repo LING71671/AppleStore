@@ -48,16 +48,6 @@ public class ColorPrinter {
     }
 
     /**
-     * 打印随机彩色文本 | Print random colored text
-     */
-    public static void printRandomColor(String text) {
-        String[] colors = {RED, YELLOW, GREEN, CYAN, BLUE, MAGENTA};
-        Random random = new Random();
-        String color = colors[random.nextInt(colors.length)];
-        println(text, color);
-    }
-
-    /**
      * 打印装饰分隔线 | Print decorative separator line
      */
     public static void printLine(int length) {
