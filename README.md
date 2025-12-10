@@ -32,4 +32,6 @@ Fixed some known problems.
 
 Delete some useless method again.
 
+3.0
 
+Add test function
